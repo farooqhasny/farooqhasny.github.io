@@ -47,7 +47,7 @@ function generateUint8Array() {
 
     for (let index = 0; index < 5; index++) {
       value *= 2;
-      if (document.getElementsByName("check" + row + index)[0].checked) {
+      if (document.getElementsByName("check" + row + index)[0].unchecked) {
         value += 1;
       }
     }
@@ -63,7 +63,7 @@ function requestDevice() {
   navigator.bluetooth.requestDevice({
     filters: [
       { services: [LED_SERVICE] },
-      { namePrefix: "BBC micro:bitt" }
+      { namePrefix: "BBC micro:bit" }
     ]
   })
     .then(device => {
