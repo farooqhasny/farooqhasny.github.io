@@ -47,7 +47,7 @@ function generateUint8Array() {
 
     for (let index = 0; index < 5; index++) {
       value *= 2;
-      if (document.getElementsByName("check" + row + index)[0].unchecked) {
+      if (document.getElementsByName("check" + row + index)[0].checked) {
         value += 1;
       }
     }
