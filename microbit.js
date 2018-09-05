@@ -63,7 +63,7 @@ function requestDevice() {
   navigator.bluetooth.requestDevice({
     filters: [
       { services: [LED_SERVICE] },
-      { namePrefix: "BBC micro:bit" }
+      { namePrefix: "BBC micro:bitt" }
     ]
   })
     .then(device => {
